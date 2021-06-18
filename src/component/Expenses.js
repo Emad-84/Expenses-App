@@ -1,11 +1,10 @@
-import ExpenseItem from './ExpenseItem';
-import './Expenses.css';
-import NewExpenses from '../component/NewExpenses/NewExpenses'
+import ExpenseItem from "./ExpenseItem";
+import "./Expenses.css";
+import NewExpenses from "../component/NewExpenses/NewExpenses";
 
 function Expenses(props) {
   return (
     <div className="expenses">
-      <NewExpenses />
       <ExpenseItem
         title={props.items[0].title}
         amount={props.items[0].amount}
